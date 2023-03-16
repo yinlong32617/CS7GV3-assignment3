@@ -1,0 +1,14 @@
+#version 330
+
+in vec3 normal,pos;
+in vec2 vTexCoords;
+
+uniform sampler2D diffuseTexture;
+
+out vec4 FragColor;
+
+void main()
+{
+	FragColor = texture(diffuseTexture, vTexCoords);
+}
+
